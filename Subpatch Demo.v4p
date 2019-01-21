@@ -1,0 +1,33 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.dtd" >
+   <PATCH nodename="C:\Users\smakhtin\Documents\GitRepos\VVVV.Nodes.S+R(Value Advanced Scope)\Subpatch Demo.v4p" systemname="Subpatch Demo" filename="C:\Users\smakhtin\Documents\GitRepos\VVVV.Nodes.S+R(Value Advanced Scope)\Subpatch Demo.v4p">
+   <BOUNDS type="Window" left="16785" top="6315" width="9000" height="6000">
+   </BOUNDS>
+   <NODE systemname="S (Value Advanced Scope)" filename="bin\Debug\VVVV.Nodes.S+R(Value Advanced Scope).dll" nodename="S (Value Advanced Scope)" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="3390" top="2145" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Send String" slicecount="1" values="vvvv">
+   </PIN>
+   <PIN pinname="Visibility" slicecount="1" values="WholePatch">
+   </PIN>
+   </NODE>
+   <NODE systemname="LFO (Animation)" nodename="LFO (Animation)" componentmode="Hidden" id="1">
+   <BOUNDS type="Node" left="3375" top="1170" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Output" dstnodeid="0" dstpinname="Input Value">
+   </LINK>
+   <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="2">
+   <BOUNDS type="Node" left="4530" top="2325" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Send String" slicecount="1" values="data">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Output" dstnodeid="2" dstpinname="Input Value">
+   </LINK>
+   </PATCH>
